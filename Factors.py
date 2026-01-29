@@ -1,7 +1,13 @@
-echo "# pratice" >> README.md
-git init
-git add README.md
-git commit -m 
-git branch -M
-git remote add origin https://github.com/majjikanakaraju2004-droid/pratice.git
-git push -u origin main
+''' write a program to find the reverse of the given number'''
+
+def reverse(num):
+    rev=0
+    while num>0:
+        rev=rev*10+num%10
+        num//=10
+    return rev
+
+def ispalidrome(num):
+    return num==reverse(num)
+print(reverse(121))
+print(ispalidrome(121))
