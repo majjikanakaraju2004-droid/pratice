@@ -9,5 +9,5 @@ def reverse(num):
 
 def ispalidrome(num):
     return num==reverse(num)
-print(reverse(123))
+print(reverse(1232))
 print(ispalidrome(121))
